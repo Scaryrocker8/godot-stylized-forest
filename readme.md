@@ -6,7 +6,7 @@ A Zelda inspired stylized forest using toon shaders and global illumination!
 
 Was messing around with TerraBrush and wanted to make a cool forest scene with it.
 
-Was also good practice making stylized assets and shaders.
+Was also good practice making stylized assets and shaders in Blender.
 
 Free to download and explore. Have fun!
 

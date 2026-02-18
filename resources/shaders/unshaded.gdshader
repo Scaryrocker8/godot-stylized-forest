@@ -59,9 +59,9 @@ void fragment() {
     } else if (blend_mode == 3) {
         result = blend_overlay(base, blend); 	// Overlay
     } else if (blend_mode == 4) {
-        result = blend_soft_light(base, blend); 	// Soft Light
+        result = blend_soft_light(base, blend); // Soft Light
     } else if (blend_mode == 5) {
-        result = blend_hard_light(base, blend); 	// Hard Light
+        result = blend_hard_light(base, blend); // Hard Light
     } else if (blend_mode == 6) {
         result = base + blend; 					// Add
     } else {
