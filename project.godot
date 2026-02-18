@@ -14,7 +14,7 @@ config/name="Godot Stylized Forest"
 config/description="A Zelda inspired forest with a mix of toon shaders and global illumination!"
 run/main_scene="uid://87iapvco1ws3"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="uid://gwu6xxuvecxs"
+config/icon="uid://cpmx08daiak1y"
 
 [audio]
 
