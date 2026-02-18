@@ -60,7 +60,7 @@ sky_material = SubResource("ShaderMaterial_a8y0u")
 
 [resource]
 background_mode = 2
-background_energy_multiplier = 0.75
+background_energy_multiplier = 0.8
 sky = SubResource("Sky_jkv2x")
 tonemap_mode = 4
 tonemap_exposure = 1.4
@@ -70,7 +70,7 @@ ssao_enabled = true
 ssil_enabled = true
 ssil_radius = 8.0
 sdfgi_enabled = true
-sdfgi_bounce_feedback = 1.25
+sdfgi_bounce_feedback = 1.5
 sdfgi_cascades = 8
 sdfgi_y_scale = 2
 sdfgi_energy = 1.085

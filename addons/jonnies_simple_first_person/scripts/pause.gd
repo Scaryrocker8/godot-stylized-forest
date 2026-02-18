@@ -4,6 +4,7 @@ class_name Pause
 @export var player: Player
 @export var reticle: Control
 @export var title: Label
+@export var hint_player: AnimationPlayer
 
 var is_paused: bool = false
 
@@ -34,6 +35,11 @@ func _resume() -> void:
 
 func _on_resume_pressed() -> void:
 	_resume()
+
+func _on_hide_menu_pressed() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
+	visible = false
+	hint_player.play("hint")
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()

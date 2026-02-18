@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="Godot Stylized Forest"
-config/description="A Zelda inspired forest with a mix of toon shaders and global illumination!"
+config/description="A Zelda inspired stylized forest with a mix of toon shaders and global illumination!"
+config/version="v1.0.1"
 run/main_scene="uid://87iapvco1ws3"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://cpmx08daiak1y"
@@ -35,6 +36,7 @@ enabled=PackedStringArray("res://addons/jonnies_simple_first_person/plugin.cfg")
 folder_colors={
 "res://addons/": "green",
 "res://assets/": "green",
+"res://builds/": "green",
 "res://extras/": "green",
 "res://resources/": "green",
 "res://scenes/": "green"
