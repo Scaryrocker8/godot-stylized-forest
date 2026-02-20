@@ -9,6 +9,7 @@ func _ready() -> void:
     _spawn_easter_egg()
 
 func _on_music_timer_timeout() -> void:
+    pitch_scale = randf_range(0.8,1.2)
     play()
 
 func _spawn_easter_egg() -> void:

@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://y2lp0i7pchrt" path="res://assets/glb/lavender/lavender_stem_albedo.png" id="6_e5eww"]
 [ext_resource type="Texture2D" uid="uid://ci3xby0bdlsne" path="res://assets/glb/grass/grass_grass_albedo.png" id="7_im81g"]
 [ext_resource type="Texture2D" uid="uid://bffridivrygu5" path="res://assets/glb/lavender/lavender_leaves_albedo.png" id="7_ygu70"]
-[ext_resource type="ArrayMesh" uid="uid://b3onv7glw7k52" path="res://resources/meshes/lavender.res" id="8_e5eww"]
+[ext_resource type="ArrayMesh" uid="uid://crgy6btka61e8" path="res://resources/meshes/lavender.res" id="8_e5eww"]
 [ext_resource type="ArrayMesh" uid="uid://br4bqttyqmnge" path="res://resources/meshes/grass.res" id="8_ysjpo"]
 [ext_resource type="PackedScene" uid="uid://c88haoy7r36gd" path="res://scenes/objects/tree.tscn" id="9_gexqn"]
 [ext_resource type="PackedScene" uid="uid://b4uef8irm8aa5" path="res://scenes/objects/rock1.tscn" id="9_kc8j3"]
@@ -27,11 +27,15 @@
 [ext_resource type="PackedScene" uid="uid://dgoq3cumwikup" path="res://scenes/objects/rock8.tscn" id="16_masl8"]
 [ext_resource type="Image" uid="uid://c2f4u5x1wc3p7" path="res://resources/terrabrush/Water_0_0.res" id="16_oix75"]
 [ext_resource type="PackedScene" uid="uid://dq3maa1euwx4r" path="res://scenes/objects/rock9.tscn" id="17_2qtp0"]
-[ext_resource type="Texture2D" uid="uid://dqjoo3yppebtg" path="res://assets/png/dust_particle.png" id="17_masl8"]
-[ext_resource type="PackedScene" uid="uid://jyncanbkjjnq" path="res://addons/jonnies_simple_first_person/player.tscn" id="18_2qtp0"]
 [ext_resource type="Image" uid="uid://d1oju85mpxned" path="res://resources/terrabrush/Object_0_0_1.res" id="23_x2df8"]
 [ext_resource type="Shader" uid="uid://bgs1idwbbnokc" path="res://resources/shaders/butterfly.gdshader" id="30_5h0uy"]
+[ext_resource type="PackedScene" uid="uid://jyncanbkjjnq" path="res://addons/jonnies_refined_first_person/player.tscn" id="31_5h0uy"]
 [ext_resource type="Texture2D" uid="uid://c7w8pxo5h6k8u" path="res://assets/png/butterfly.png" id="31_s001h"]
+[ext_resource type="AudioStream" uid="uid://cjm6gi6mm0hr0" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_0.wav" id="32_3ysba"]
+[ext_resource type="AudioStream" uid="uid://dnaego1qoctl5" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_1.wav" id="33_8cxo1"]
+[ext_resource type="AudioStream" uid="uid://bixovo586axcw" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_2.wav" id="34_t626s"]
+[ext_resource type="AudioStream" uid="uid://bpsij3lmmwubb" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_3.wav" id="35_gkbbv"]
+[ext_resource type="AudioStream" uid="uid://cvlvfuolwhyg1" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_4.wav" id="36_0rxfm"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_o6xl0"]
 noise_type = 3
@@ -158,30 +162,6 @@ material = SubResource("ShaderMaterial_s001h")
 size = Vector2(1, 1)
 subdivide_width = 5
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_a8y0u"]
-emission_shape_scale = Vector3(100, 2, 100)
-emission_shape = 3
-emission_box_extents = Vector3(1, 1, 1)
-gravity = Vector3(0, -0.01, 0)
-turbulence_enabled = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jkv2x"]
-transparency = 1
-blend_mode = 1
-cull_mode = 2
-shading_mode = 0
-albedo_color = Color(1, 1, 0.7254902, 1)
-albedo_texture = ExtResource("17_masl8")
-billboard_mode = 1
-billboard_keep_scale = true
-proximity_fade_enabled = true
-proximity_fade_distance = 25.0
-stencil_flags = 2
-
-[sub_resource type="QuadMesh" id="QuadMesh_jbj1t"]
-material = SubResource("StandardMaterial3D_jkv2x")
-size = Vector2(0.1, 0.1)
-
 [node name="Forest" type="Node3D" unique_id=2105120005]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2042274331]
@@ -200,12 +180,13 @@ bus = &"SFX"
 script = ExtResource("5_2blc1")
 
 [node name="MusicTimer" type="Timer" parent="Music" unique_id=24826520]
-wait_time = 60.0
+wait_time = 90.0
 autostart = true
 
 [node name="Ambience" type="AudioStreamPlayer" parent="." unique_id=332993443]
 stream = ExtResource("3_xgklb")
 volume_db = -3.5
+pitch_scale = 0.96
 autoplay = true
 bus = &"SFX"
 
@@ -379,16 +360,13 @@ randomness = 1.0
 process_material = SubResource("ParticleProcessMaterial_5h0uy")
 draw_pass_1 = SubResource("PlaneMesh_t1ev5")
 
-[node name="Player" parent="." unique_id=857042829 instance=ExtResource("18_2qtp0")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5, 0, -7)
-
-[node name="Dust" type="GPUParticles3D" parent="Player" unique_id=876982510]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-gi_mode = 2
-amount = 5000
-lifetime = 10.0
-preprocess = 15.0
-process_material = SubResource("ParticleProcessMaterial_a8y0u")
-draw_pass_1 = SubResource("QuadMesh_jbj1t")
+[node name="Player" parent="." unique_id=857042829 instance=ExtResource("31_5h0uy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 8)
+run_speed = 2.0
+walk_speed = 1.0
+crouch_speed = 0.5
+head_bob_frequency = 2.5
+turn_off_jumping = true
+footstep_default_sounds = Array[AudioStream]([ExtResource("32_3ysba"), ExtResource("33_8cxo1"), ExtResource("34_t626s"), ExtResource("35_gkbbv"), ExtResource("36_0rxfm")])
 
 [connection signal="timeout" from="Music/MusicTimer" to="Music" method="_on_music_timer_timeout"]
