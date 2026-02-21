@@ -6,7 +6,7 @@ Lots of changes!
 
 - Added flower patches and falling leaves
 
-- Added smooth animation transitions for pause menu
+- Added smooth animations for pause menu
 
 - Added auto-exposure for better visual clarity
 
@@ -21,3 +21,7 @@ Lots of changes!
 - Added head bobbing
 
 - Removed jumping
+
+[TODO] - Fix pause menu to work with gamepad.
+
+[TODO] - Add time of day changer to pause menu. (too fucking tired to keep working on this...)

@@ -17,6 +17,10 @@ var is_paused: bool = false
 var depth_of_field: bool = false
 var changed_glow: bool = false
 
+var time_of_day: int
+
+@onready var world_environment: WorldEnvironment = get_tree().root.get_node("Forest").get_node("WorldEnvironment")
+
 func _ready() -> void:
 	title.text = ProjectSettings.get("application/config/name")
 	visible = false
@@ -60,8 +64,6 @@ func _on_hide_menu_pressed() -> void:
 	hide_player.play("hide_menu")
 
 func _on_glow_type_pressed() -> void:
-	var world_environment: WorldEnvironment = get_tree().root.get_node("Forest").get_node("WorldEnvironment")
-
 	if !changed_glow:
 		world_environment.environment = glow_presets[1]
 		glow_type_button.text = "Glow Type: Softlight"

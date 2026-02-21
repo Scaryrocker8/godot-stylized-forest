@@ -345,6 +345,7 @@ footstep_audio = NodePath("FootstepAudio")
 reticle = NodePath("Reticle")
 footstep_user_library = Array[ExtResource("2_7i78y")]([SubResource("Resource_qlcgt"), SubResource("Resource_b6tlg")])
 footstep_default_sounds = Array[AudioStream]([ExtResource("2_xexn6"), ExtResource("3_7i78y"), ExtResource("4_8r2p5"), ExtResource("5_yjmjn"), ExtResource("6_j25e1")])
+enable_reticle = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1544727262]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.925, 0)

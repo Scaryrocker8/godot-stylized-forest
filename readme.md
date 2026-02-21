@@ -14,10 +14,6 @@ Free to download and explore. Have fun!
 
 # Screenshots
 
-![screenshot](extras/screenshot0.png)
-![screenshot](extras/screenshot1.png)
-![screenshot](extras/screenshot2.png)
-![screenshot](extras/screenshot3.png)
-![screenshot](extras/screenshot4.png)
+*WIP. Making new screenshots with current build*
 
 Created by Jonnie Gieringer

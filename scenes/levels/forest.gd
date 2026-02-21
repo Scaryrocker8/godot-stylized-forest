@@ -21,7 +21,6 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 
     if Engine.is_editor_hint():
-
         if cycle_in_editor && day_night_cycle:
             sun.rotation_degrees.x += 0.005
         else:
@@ -56,4 +55,3 @@ func _spawn_easter_egg() -> void:
     easter_egg_instance.position.y = 1.2
     easter_egg_instance.position.z = 120.
     easter_egg_instance.rotation_degrees.y = 48.
-

@@ -57,16 +57,16 @@ class_name DeflectorCubeOfJustice
 
 # In fact this cube doesn't really do anything either.
 
-# The reason it's here is because for whatever god awful reason, when using screen-space glow,
+# The reason it's here is because for whatever god awful reason, when using Godot's world environment glow,
 # The center origin of the map starts flashing obnoxiously when the player looks towards it.
-
-# Just the center origin. No where else.
 
 # Very annoying.
 
 # The only way I could fully resolve this issue was to place a cube mesh just large enough to cover it.
 
-# I call it the Deflector Cube of Justice.
+# I call it the
+
+## Deflector Cube of Justice.
 
 # If you decide to remove this cube you will be blinded by a bright light.
 
@@ -306,8 +306,6 @@ subdivide_width = 3
 
 [node name="Forest" type="Node3D" unique_id=2105120005 node_paths=PackedStringArray("sun", "music")]
 script = ExtResource("1_q5e2f")
-time_of_day = 2
-day_night_cycle = false
 sun = NodePath("Sun")
 music = NodePath("Music")
 
@@ -315,12 +313,11 @@ music = NodePath("Music")
 environment = ExtResource("2_5trac")
 
 [node name="DeflectorCubeOfJustice" type="MeshInstance3D" parent="WorldEnvironment" unique_id=840777930]
-visible = false
 mesh = SubResource("BoxMesh_5trac")
 script = SubResource("GDScript_5trac")
 
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=1736120272]
-transform = Transform3D(1, 0, 0, 0, -4.371138e-08, 0.9999998, 0, -0.9999998, -4.371138e-08, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -0.81915194, 0.57357633, 0, -0.57357633, -0.81915194, 0, 0, 0)
 light_color = Color(1, 1, 0.6862745, 1)
 light_energy = 1.75
 shadow_enabled = true
@@ -364,8 +361,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 8)
 run_speed = 2.0
 walk_speed = 1.0
 crouch_speed = 0.5
+toggle_crouch = true
 head_bob_frequency = 2.5
 turn_off_jumping = true
 footstep_default_sounds = Array[AudioStream]([ExtResource("32_3ysba"), ExtResource("33_8cxo1"), ExtResource("34_t626s"), ExtResource("35_gkbbv"), ExtResource("36_0rxfm")])
+enable_reticle = true
 
 [connection signal="timeout" from="Music/MusicTimer" to="." method="_on_music_timer_timeout"]
