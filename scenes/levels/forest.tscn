@@ -1,41 +1,77 @@
 [gd_scene format=3 uid="uid://87iapvco1ws3"]
 
-[ext_resource type="Environment" uid="uid://c83t6g472ycdw" path="res://resources/world_environment/forest_environment.tres" id="1_e5eww"]
-[ext_resource type="Script" uid="uid://v81tvjs6170i" path="res://scenes/levels/scripts/sun.gd" id="2_2blc1"]
+[ext_resource type="Script" uid="uid://btuw2r4sp6do1" path="res://scenes/levels/forest.gd" id="1_q5e2f"]
+[ext_resource type="Environment" uid="uid://c83t6g472ycdw" path="res://resources/world_environment/forest_environment_screen.tres" id="2_5trac"]
 [ext_resource type="AudioStream" uid="uid://d2eqm6aj16fcc" path="res://assets/wav/forest_ambience.wav" id="3_xgklb"]
 [ext_resource type="AudioStream" uid="uid://dfamd3bgdnbf7" path="res://assets/wav/Reflective Piano Notes - Metris.wav" id="4_lx0eo"]
-[ext_resource type="Script" uid="uid://be2k7w4blbjlt" path="res://scenes/levels/scripts/music.gd" id="5_2blc1"]
 [ext_resource type="Texture2D" uid="uid://y2lp0i7pchrt" path="res://assets/glb/lavender/lavender_stem_albedo.png" id="6_e5eww"]
 [ext_resource type="Texture2D" uid="uid://ci3xby0bdlsne" path="res://assets/glb/grass/grass_grass_albedo.png" id="7_im81g"]
 [ext_resource type="Texture2D" uid="uid://bffridivrygu5" path="res://assets/glb/lavender/lavender_leaves_albedo.png" id="7_ygu70"]
 [ext_resource type="ArrayMesh" uid="uid://crgy6btka61e8" path="res://resources/meshes/lavender.res" id="8_e5eww"]
 [ext_resource type="ArrayMesh" uid="uid://br4bqttyqmnge" path="res://resources/meshes/grass.res" id="8_ysjpo"]
 [ext_resource type="PackedScene" uid="uid://c88haoy7r36gd" path="res://scenes/objects/tree.tscn" id="9_gexqn"]
-[ext_resource type="PackedScene" uid="uid://b4uef8irm8aa5" path="res://scenes/objects/rock1.tscn" id="9_kc8j3"]
-[ext_resource type="PackedScene" uid="uid://33kfgo72xogy" path="res://scenes/objects/rock2.tscn" id="10_e5eww"]
+[ext_resource type="PackedScene" uid="uid://b4uef8irm8aa5" path="res://scenes/objects/rocks/rock1.tscn" id="9_kc8j3"]
+[ext_resource type="PackedScene" uid="uid://33kfgo72xogy" path="res://scenes/objects/rocks/rock2.tscn" id="10_e5eww"]
 [ext_resource type="Image" uid="uid://c7qetbc4hmh7l" path="res://resources/terrabrush/Color_0_0.res" id="10_kc8j3"]
+[ext_resource type="Shader" uid="uid://36iqj5wf0225" path="res://resources/shaders/grass.gdshader" id="11_0rxfm"]
+[ext_resource type="ArrayMesh" uid="uid://btlyw7h6f5gn2" path="res://resources/meshes/flowers.res" id="11_8cxo1"]
 [ext_resource type="Image" uid="uid://c1l0mqbrutnay" path="res://resources/terrabrush/Foliage_0_0_0.res" id="11_e5eww"]
-[ext_resource type="PackedScene" uid="uid://c4lycjplepv8b" path="res://scenes/objects/rock3.tscn" id="11_ygu70"]
-[ext_resource type="PackedScene" uid="uid://sx1rsmxpptb4" path="res://scenes/objects/rock4.tscn" id="12_x5gqu"]
+[ext_resource type="PackedScene" uid="uid://c4lycjplepv8b" path="res://scenes/objects/rocks/rock3.tscn" id="11_ygu70"]
+[ext_resource type="Texture2D" uid="uid://d14l6lbn5utg6" path="res://assets/blend/flowers/textures/flowers_alpha.png" id="12_ges7r"]
+[ext_resource type="PackedScene" uid="uid://sx1rsmxpptb4" path="res://scenes/objects/rocks/rock4.tscn" id="12_x5gqu"]
 [ext_resource type="Image" uid="uid://cfcjk3x7jmglq" path="res://resources/terrabrush/Foliage_0_0_1.res" id="12_ygu70"]
-[ext_resource type="PackedScene" uid="uid://b5ejqkejnie46" path="res://scenes/objects/rock5.tscn" id="13_8qayg"]
+[ext_resource type="PackedScene" uid="uid://b5ejqkejnie46" path="res://scenes/objects/rocks/rock5.tscn" id="13_8qayg"]
 [ext_resource type="Image" uid="uid://h23i0o3bmu72" path="res://resources/terrabrush/Heightmap_0_0.res" id="13_x5gqu"]
 [ext_resource type="Image" uid="uid://bcj584luxqo23" path="res://resources/terrabrush/Object_0_0_0.res" id="14_8qayg"]
-[ext_resource type="PackedScene" uid="uid://ci6uwcwixa2pb" path="res://scenes/objects/rock6.tscn" id="14_gvp5n"]
+[ext_resource type="PackedScene" uid="uid://ci6uwcwixa2pb" path="res://scenes/objects/rocks/rock6.tscn" id="14_gvp5n"]
 [ext_resource type="Image" uid="uid://besbgw1sv26wj" path="res://resources/terrabrush/Snow_0_0.res" id="15_gvp5n"]
-[ext_resource type="PackedScene" uid="uid://cw4gmxgu43o30" path="res://scenes/objects/rock7.tscn" id="15_oix75"]
-[ext_resource type="PackedScene" uid="uid://dgoq3cumwikup" path="res://scenes/objects/rock8.tscn" id="16_masl8"]
+[ext_resource type="PackedScene" uid="uid://cw4gmxgu43o30" path="res://scenes/objects/rocks/rock7.tscn" id="15_oix75"]
+[ext_resource type="PackedScene" uid="uid://dgoq3cumwikup" path="res://scenes/objects/rocks/rock8.tscn" id="16_masl8"]
 [ext_resource type="Image" uid="uid://c2f4u5x1wc3p7" path="res://resources/terrabrush/Water_0_0.res" id="16_oix75"]
-[ext_resource type="PackedScene" uid="uid://dq3maa1euwx4r" path="res://scenes/objects/rock9.tscn" id="17_2qtp0"]
+[ext_resource type="PackedScene" uid="uid://dq3maa1euwx4r" path="res://scenes/objects/rocks/rock9.tscn" id="17_2qtp0"]
 [ext_resource type="Image" uid="uid://d1oju85mpxned" path="res://resources/terrabrush/Object_0_0_1.res" id="23_x2df8"]
+[ext_resource type="Image" uid="uid://n12r3jeh0o5d" path="res://resources/terrabrush/Foliage_0_0_2.res" id="25_t626s"]
+[ext_resource type="Image" uid="uid://dcfb5by4j3pox" path="res://resources/terrabrush/Foliage_0_0_3.res" id="27_ges7r"]
+[ext_resource type="Image" uid="uid://bpyngnfw0i3it" path="res://resources/terrabrush/Foliage_0_0_4.res" id="28_5trac"]
 [ext_resource type="Shader" uid="uid://bgs1idwbbnokc" path="res://resources/shaders/butterfly.gdshader" id="30_5h0uy"]
 [ext_resource type="PackedScene" uid="uid://jyncanbkjjnq" path="res://addons/jonnies_refined_first_person/player.tscn" id="31_5h0uy"]
 [ext_resource type="Texture2D" uid="uid://c7w8pxo5h6k8u" path="res://assets/png/butterfly.png" id="31_s001h"]
+[ext_resource type="PackedScene" uid="uid://bensm83lh84cr" path="res://scenes/objects/butterflys.tscn" id="32_0rxfm"]
 [ext_resource type="AudioStream" uid="uid://cjm6gi6mm0hr0" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_0.wav" id="32_3ysba"]
 [ext_resource type="AudioStream" uid="uid://dnaego1qoctl5" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_1.wav" id="33_8cxo1"]
 [ext_resource type="AudioStream" uid="uid://bixovo586axcw" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_2.wav" id="34_t626s"]
 [ext_resource type="AudioStream" uid="uid://bpsij3lmmwubb" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_3.wav" id="35_gkbbv"]
 [ext_resource type="AudioStream" uid="uid://cvlvfuolwhyg1" path="res://addons/jonnies_refined_first_person/sounds/footsteps/grass/grass_footstep_4.wav" id="36_0rxfm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5trac"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5trac"]
+material = SubResource("StandardMaterial3D_5trac")
+size = Vector3(0.275, 0.275, 0.275)
+
+[sub_resource type="GDScript" id="GDScript_5trac"]
+script/source = "extends MeshInstance3D
+class_name DeflectorCubeOfJustice
+
+# This class doesn't actually do anything.
+
+# In fact this cube doesn't really do anything either.
+
+# The reason it's here is because for whatever god awful reason, when using screen-space glow,
+# The center origin of the map starts flashing obnoxiously when the player looks towards it.
+
+# Just the center origin. No where else.
+
+# Very annoying.
+
+# The only way I could fully resolve this issue was to place a cube mesh just large enough to cover it.
+
+# I call it the Deflector Cube of Justice.
+
+# If you decide to remove this cube you will be blinded by a bright light.
+
+# You have been warned.
+"
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_o6xl0"]
 noise_type = 3
@@ -80,6 +116,138 @@ applyOnTextureIndexes = Array[int]([0, 1])
 [sub_resource type="FoliageResource" id="FoliageResource_dp3eg"]
 definition = SubResource("FoliageDefinitionResource_muem4")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5trac"]
+render_priority = 0
+shader = ExtResource("11_0rxfm")
+shader_parameter/billboard = false
+shader_parameter/shape_texture = ExtResource("12_ges7r")
+shader_parameter/use_atlas = false
+shader_parameter/random_variation = 0.002
+shader_parameter/wind_velocity = Vector2(0, 0)
+shader_parameter/alpha_cut_start = 0.1
+shader_parameter/alpha_cut_end = 0.9
+shader_parameter/alpha_mode = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_spg4i"]
+transparency = 2
+alpha_scissor_threshold = 0.375
+alpha_antialiasing_mode = 0
+blend_mode = 1
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.7058824, 0.7058824, 0.6862745, 1)
+albedo_texture = ExtResource("12_ges7r")
+albedo_texture_msdf = true
+rim_enabled = true
+rim = 0.03
+texture_filter = 1
+stencil_flags = 2
+
+[sub_resource type="FoliageDefinitionResource" id="FoliageDefinitionResource_t626s"]
+strategy = 2
+mesh = ExtResource("11_8cxo1")
+meshScale = Vector3(2, 2, 2)
+windStrength = 0.75
+customShader = SubResource("ShaderMaterial_5trac")
+meshMaterial = SubResource("StandardMaterial3D_spg4i")
+
+[sub_resource type="FoliageResource" id="FoliageResource_gkbbv"]
+definition = SubResource("FoliageDefinitionResource_t626s")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_spg4i"]
+load_path = "res://.godot/imported/flowers_alpha.png-2e4ca40c863a5a8b8671af460713e42b.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5e2f"]
+transparency = 2
+alpha_scissor_threshold = 0.375
+alpha_antialiasing_mode = 0
+blend_mode = 1
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(1, 0, 0, 1)
+albedo_texture = SubResource("CompressedTexture2D_spg4i")
+albedo_texture_msdf = true
+rim_enabled = true
+rim = 0.07
+texture_filter = 1
+
+[sub_resource type="FoliageDefinitionResource" id="FoliageDefinitionResource_spg4i"]
+strategy = 2
+mesh = ExtResource("11_8cxo1")
+meshScale = Vector3(2, 2, 2)
+windStrength = 0.75
+meshMaterial = SubResource("StandardMaterial3D_q5e2f")
+
+[sub_resource type="FoliageResource" id="FoliageResource_41gld"]
+definition = SubResource("FoliageDefinitionResource_spg4i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ds5o5"]
+resource_name = "Flowers"
+transparency = 4
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+albedo_texture = ExtResource("12_ges7r")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_685ue"]
+_surfaces = [{
+"aabb": AABB(-1.4, 0.027999999, -1.4, 2.8, 1e-05, 2.8),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"name": "Flowers",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4ptgd"]
+resource_name = "flowers_Plane"
+_surfaces = [{
+"aabb": AABB(-1.4, 0.027999999, -1.4, 2.8, 1e-05, 2.8),
+"attribute_data": PackedByteArray(0, 0, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_ds5o5"),
+"name": "Flowers",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 0, 255, 255, 255, 191, 255, 255, 0, 0, 0, 0, 255, 191, 255, 255, 0, 0, 255, 255, 255, 191, 0, 0, 0, 0, 0, 0, 255, 191, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_685ue")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kij0x"]
+load_path = "res://.godot/imported/flowers_alpha.png-2e4ca40c863a5a8b8671af460713e42b.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2j4kp"]
+transparency = 2
+alpha_scissor_threshold = 0.375
+alpha_antialiasing_mode = 0
+blend_mode = 1
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.38039216, 0, 0.88235295, 1)
+albedo_texture = SubResource("CompressedTexture2D_kij0x")
+albedo_texture_msdf = true
+rim_enabled = true
+rim = 0.07
+texture_filter = 1
+
+[sub_resource type="FoliageDefinitionResource" id="FoliageDefinitionResource_iq0qb"]
+strategy = 2
+mesh = SubResource("ArrayMesh_4ptgd")
+meshScale = Vector3(2, 2, 2)
+windStrength = 0.75
+meshMaterial = SubResource("StandardMaterial3D_2j4kp")
+
+[sub_resource type="FoliageResource" id="FoliageResource_x5go8"]
+definition = SubResource("FoliageDefinitionResource_iq0qb")
+
 [sub_resource type="ObjectDefinitionResource" id="ObjectDefinitionResource_choun"]
 objectFrequency = 4
 randomRange = 4.0
@@ -105,39 +273,13 @@ definition = SubResource("ObjectDefinitionResource_tts5y")
 [sub_resource type="ZoneResource" id="ZoneResource_85g3d"]
 heightMapImage = ExtResource("13_x5gqu")
 colorImage = ExtResource("10_kc8j3")
-foliagesImage = Array[Image]([ExtResource("11_e5eww"), ExtResource("12_ygu70")])
+foliagesImage = Array[Image]([ExtResource("11_e5eww"), ExtResource("12_ygu70"), ExtResource("25_t626s"), ExtResource("27_ges7r"), ExtResource("28_5trac")])
 objectsImage = Array[Image]([ExtResource("14_8qayg"), ExtResource("23_x2df8")])
 waterImage = ExtResource("16_oix75")
 snowImage = ExtResource("15_gvp5n")
 
 [sub_resource type="ZonesResource" id="ZonesResource_choun"]
 zones = Array[ZoneResource]([SubResource("ZoneResource_85g3d")])
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_lx0eo"]
-lifetime_randomness = 0.3
-emission_shape = 1
-emission_sphere_radius = 5.0
-gravity = Vector3(2, 0, 0)
-radial_accel_min = -5.000002
-radial_accel_max = 4.9999976
-scale_max = 1.1999999
-turbulence_enabled = true
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_lx0eo"]
-render_priority = 0
-shader = ExtResource("30_5h0uy")
-shader_parameter/tex = ExtResource("31_s001h")
-shader_parameter/color1 = Color(0, 0, 0, 1)
-shader_parameter/color2 = Color(0.78431374, 0.78431374, 0.74509805, 1)
-shader_parameter/displ_amnt = 0.048
-shader_parameter/displ_speed = 30.0
-shader_parameter/pi = 3.1415927
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_2blc1"]
-material = SubResource("ShaderMaterial_lx0eo")
-size = Vector2(0, 0.1)
-subdivide_width = 1
-subdivide_depth = 1
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5h0uy"]
 lifetime_randomness = 0.3
@@ -160,24 +302,32 @@ shader_parameter/pi = 3.1415927
 [sub_resource type="PlaneMesh" id="PlaneMesh_t1ev5"]
 material = SubResource("ShaderMaterial_s001h")
 size = Vector2(1, 1)
-subdivide_width = 5
+subdivide_width = 3
 
-[node name="Forest" type="Node3D" unique_id=2105120005]
+[node name="Forest" type="Node3D" unique_id=2105120005 node_paths=PackedStringArray("sun", "music")]
+script = ExtResource("1_q5e2f")
+time_of_day = 2
+day_night_cycle = false
+sun = NodePath("Sun")
+music = NodePath("Music")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2042274331]
-environment = ExtResource("1_e5eww")
+environment = ExtResource("2_5trac")
+
+[node name="DeflectorCubeOfJustice" type="MeshInstance3D" parent="WorldEnvironment" unique_id=840777930]
+visible = false
+mesh = SubResource("BoxMesh_5trac")
+script = SubResource("GDScript_5trac")
 
 [node name="Sun" type="DirectionalLight3D" parent="." unique_id=1736120272]
-transform = Transform3D(1, 0, 0, 0, -0.8660252, 0.49999997, 0, -0.49999997, -0.8660252, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -4.371138e-08, 0.9999998, 0, -0.9999998, -4.371138e-08, 0, 0, 0)
 light_color = Color(1, 1, 0.6862745, 1)
 light_energy = 1.75
 shadow_enabled = true
-script = ExtResource("2_2blc1")
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=322420229]
 stream = ExtResource("4_lx0eo")
 bus = &"SFX"
-script = ExtResource("5_2blc1")
 
 [node name="MusicTimer" type="Timer" parent="Music" unique_id=24826520]
 wait_time = 90.0
@@ -192,167 +342,16 @@ bus = &"SFX"
 
 [node name="TerraBrush" type="TerraBrush" parent="." unique_id=1707627618]
 dataPath = "res://resources/terrabrush"
-foliages = Array[FoliageResource]([SubResource("FoliageResource_eb6dy"), SubResource("FoliageResource_dp3eg")])
+foliages = Array[FoliageResource]([SubResource("FoliageResource_eb6dy"), SubResource("FoliageResource_dp3eg"), SubResource("FoliageResource_gkbbv"), SubResource("FoliageResource_41gld"), SubResource("FoliageResource_x5go8")])
 objects = Array[ObjectResource]([SubResource("ObjectResource_ya4ey"), SubResource("ObjectResource_yb600")])
 terrainZones = SubResource("ZonesResource_choun")
 metadata/_edit_lock_ = false
 
-[node name="Butterflys" type="Node3D" parent="." unique_id=1720493665]
-
-[node name="Butterflys" type="GPUParticles3D" parent="Butterflys" unique_id=1316553451]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, -10)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys2" type="GPUParticles3D" parent="Butterflys" unique_id=407467581]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 2, 4)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys3" type="GPUParticles3D" parent="Butterflys" unique_id=375416687]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 21)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys4" type="GPUParticles3D" parent="Butterflys" unique_id=1525574254]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 13)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys5" type="GPUParticles3D" parent="Butterflys" unique_id=276293062]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 5, -39)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys6" type="GPUParticles3D" parent="Butterflys" unique_id=338006398]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 3, -38)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys7" type="GPUParticles3D" parent="Butterflys" unique_id=1362864435]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 2, 2, -20)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys8" type="GPUParticles3D" parent="Butterflys" unique_id=1912955743]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 23, 1, -20)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys9" type="GPUParticles3D" parent="Butterflys" unique_id=2094607569]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 24, 3, 33)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys10" type="GPUParticles3D" parent="Butterflys" unique_id=1750376045]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -15, 3, 34)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys11" type="GPUParticles3D" parent="Butterflys" unique_id=1254109352]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -38, 2, 34)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys12" type="GPUParticles3D" parent="Butterflys" unique_id=291815919]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -35, 4, -2)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys13" type="GPUParticles3D" parent="Butterflys" unique_id=446721617]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -32, 4, -50)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys14" type="GPUParticles3D" parent="Butterflys" unique_id=1234215821]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -10, 2, -50)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys15" type="GPUParticles3D" parent="Butterflys" unique_id=873127481]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 40, 2, -50)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys16" type="GPUParticles3D" parent="Butterflys" unique_id=472772028]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 4)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys17" type="GPUParticles3D" parent="Butterflys" unique_id=199907154]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, -10)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys18" type="GPUParticles3D" parent="Butterflys" unique_id=1725520178]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 11)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
-
-[node name="Butterflys19" type="GPUParticles3D" parent="Butterflys" unique_id=888819906]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -4, 2, -28)
-amount = 20
-lifetime = 8.0
-preprocess = 3.0
-process_material = SubResource("ParticleProcessMaterial_lx0eo")
-draw_pass_1 = SubResource("PlaneMesh_2blc1")
+[node name="Butterflys" parent="." unique_id=1125983698 instance=ExtResource("32_0rxfm")]
 
 [node name="Birds" type="GPUParticles3D" parent="." unique_id=2146751582]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 52, -117)
+extra_cull_margin = 1000.0
 amount = 40
 lifetime = 20.0
 preprocess = 10.0
@@ -369,4 +368,4 @@ head_bob_frequency = 2.5
 turn_off_jumping = true
 footstep_default_sounds = Array[AudioStream]([ExtResource("32_3ysba"), ExtResource("33_8cxo1"), ExtResource("34_t626s"), ExtResource("35_gkbbv"), ExtResource("36_0rxfm")])
 
-[connection signal="timeout" from="Music/MusicTimer" to="Music" method="_on_music_timer_timeout"]
+[connection signal="timeout" from="Music/MusicTimer" to="." method="_on_music_timer_timeout"]

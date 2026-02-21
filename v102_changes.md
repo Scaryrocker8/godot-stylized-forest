@@ -2,31 +2,22 @@
 
 Lots of changes!
 
-- New spawn position similar to preview.
+- New spawn position similar to preview
 
-- Added smooth transitions for pause menu.
+- Added flower patches and falling leaves
 
-- Randomized pitch of piano, giving more variety.
+- Added smooth animation transitions for pause menu
 
-- Added head bob
+- Added auto-exposure for better visual clarity
+
+- Added ability to toggle glow type (screen or softlight) for different visual styles
+
+- Added ability to toggle depth of field
+
+- Randomized pitch of piano, giving more variety
+
+- Fixed forest ambience cutting out after looping
+
+- Added head bobbing
 
 - Removed jumping
-
-- Added ability to change time of day (morning, midday, dusk, fog)
-
-
-
-
-
-
-
-
-
-- [TODO] Add animals! (squirrels running up trees, critters, etc.)
-
-- [TODO] Add more foliage variety. (See BOTW for inspiration)
-
-- [TODO] Add more bug variety.
-
-
-

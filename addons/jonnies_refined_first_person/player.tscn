@@ -18,7 +18,9 @@
 [ext_resource type="AudioStream" uid="uid://n6lqre3byxu6" path="res://addons/jonnies_refined_first_person/sounds/footsteps/tiles/tiles_footstep_3.wav" id="11_yh1je"]
 [ext_resource type="AudioStream" uid="uid://cnp8xgto3wv3p" path="res://addons/jonnies_refined_first_person/sounds/footsteps/tiles/tiles_footstep_4.wav" id="12_0vkpn"]
 [ext_resource type="Script" uid="uid://1pek5gassy7x" path="res://addons/jonnies_refined_first_person/scripts/pause.gd" id="12_qk8yx"]
-[ext_resource type="Script" uid="uid://85iqnuaqm8c1" path="res://addons/jonnies_refined_first_person/time_of_day.gd" id="19_im0dj"]
+[ext_resource type="CameraAttributesPractical" uid="uid://bx2xnsl2c6l27" path="res://resources/camera_attributes/player_camera_attributes.tres" id="18_im0dj"]
+[ext_resource type="Environment" uid="uid://c83t6g472ycdw" path="res://resources/world_environment/forest_environment_screen.tres" id="20_ctnpt"]
+[ext_resource type="Environment" uid="uid://d4jpwtoxvvbbx" path="res://resources/world_environment/forest_environment_softlight.tres" id="21_odkyw"]
 
 [sub_resource type="Resource" id="Resource_qlcgt"]
 script = ExtResource("2_7i78y")
@@ -355,6 +357,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 [node name="LandingAnimation" type="Node3D" parent="HeadPosition" unique_id=695904868]
 
 [node name="Camera3D" type="Camera3D" parent="HeadPosition/LandingAnimation" unique_id=1971858706]
+attributes = ExtResource("18_im0dj")
+fov = 70.0
 
 [node name="InteractDetector" type="RayCast3D" parent="HeadPosition/LandingAnimation/Camera3D" unique_id=1523839307]
 target_position = Vector3(0, 0, -1.75)
@@ -402,7 +406,7 @@ offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Pause" type="Control" parent="." unique_id=1786672432 node_paths=PackedStringArray("player", "reticle", "title", "resume_button", "quit_button", "pause_player", "hide_player")]
+[node name="Pause" type="Control" parent="." unique_id=1786672432 node_paths=PackedStringArray("player", "reticle", "title", "resume_button", "depth_of_field_button", "glow_type_button", "quit_button", "pause_player", "hide_player")]
 process_mode = 3
 visible = false
 layout_mode = 3
@@ -417,9 +421,12 @@ player = NodePath("..")
 reticle = NodePath("../Reticle")
 title = NodePath("VBoxContainer/Title")
 resume_button = NodePath("VBoxContainer/Resume")
+depth_of_field_button = NodePath("VBoxContainer/DepthOfField")
+glow_type_button = NodePath("VBoxContainer/GlowType")
 quit_button = NodePath("VBoxContainer/Quit")
 pause_player = NodePath("PausePlayer")
 hide_player = NodePath("../HideMenu/HidePlayer")
+glow_presets = Array[Resource]([ExtResource("20_ctnpt"), ExtResource("21_odkyw")])
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Pause" unique_id=1739115640]
 layout_mode = 1
@@ -449,14 +456,21 @@ text = "Hide Menu"
 flat = true
 alignment = 0
 
-[node name="TimeOfDay" type="Button" parent="Pause/VBoxContainer" unique_id=323394232]
+[node name="DepthOfField" type="Button" parent="Pause/VBoxContainer" unique_id=1204548496]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 theme_override_styles/focus = SubResource("StyleBoxEmpty_solfg")
-text = "Time of Day: Morning"
+text = "Depth of Field: Off"
 flat = true
 alignment = 0
-script = ExtResource("19_im0dj")
+
+[node name="GlowType" type="Button" parent="Pause/VBoxContainer" unique_id=710529162]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxEmpty_solfg")
+text = "Glow Type: Screen"
+flat = true
+alignment = 0
 
 [node name="Quit" type="Button" parent="Pause/VBoxContainer" unique_id=2140728645]
 layout_mode = 2
@@ -519,5 +533,6 @@ autoplay = &"fade_in"
 
 [connection signal="pressed" from="Pause/VBoxContainer/Resume" to="Pause" method="_on_resume_pressed"]
 [connection signal="pressed" from="Pause/VBoxContainer/HideMenu" to="Pause" method="_on_hide_menu_pressed"]
-[connection signal="pressed" from="Pause/VBoxContainer/TimeOfDay" to="Pause" method="_on_time_of_day_pressed"]
+[connection signal="pressed" from="Pause/VBoxContainer/DepthOfField" to="Pause" method="_on_depth_of_field_pressed"]
+[connection signal="pressed" from="Pause/VBoxContainer/GlowType" to="Pause" method="_on_glow_type_pressed"]
 [connection signal="pressed" from="Pause/VBoxContainer/Quit" to="Pause" method="_on_quit_pressed"]

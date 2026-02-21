@@ -1,0 +1,184 @@
+[gd_scene format=3 uid="uid://bensm83lh84cr"]
+
+[ext_resource type="Shader" uid="uid://bgs1idwbbnokc" path="res://resources/shaders/butterfly.gdshader" id="1_yrpt0"]
+[ext_resource type="Texture2D" uid="uid://c7w8pxo5h6k8u" path="res://assets/png/butterfly.png" id="2_sila0"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_lx0eo"]
+lifetime_randomness = 0.3
+emission_shape = 1
+emission_sphere_radius = 5.0
+gravity = Vector3(2, 0, 0)
+radial_accel_min = -5.000002
+radial_accel_max = 4.9999976
+scale_max = 1.1999999
+turbulence_enabled = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lx0eo"]
+render_priority = 0
+shader = ExtResource("1_yrpt0")
+shader_parameter/tex = ExtResource("2_sila0")
+shader_parameter/color1 = Color(0, 0, 0, 1)
+shader_parameter/color2 = Color(0.78431374, 0.78431374, 0.74509805, 1)
+shader_parameter/displ_amnt = 0.048
+shader_parameter/displ_speed = 30.0
+shader_parameter/pi = 3.1415927
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2blc1"]
+material = SubResource("ShaderMaterial_lx0eo")
+size = Vector2(0, 0.1)
+subdivide_width = 1
+subdivide_depth = 1
+
+[node name="Butterflys" type="Node3D" unique_id=1125983698]
+
+[node name="Butterflys" type="GPUParticles3D" parent="." unique_id=793746277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, -10)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys2" type="GPUParticles3D" parent="." unique_id=1832287325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 2, 4)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys3" type="GPUParticles3D" parent="." unique_id=1480806819]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 21)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys4" type="GPUParticles3D" parent="." unique_id=240598815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 13)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys5" type="GPUParticles3D" parent="." unique_id=2060943522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 5, -39)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys6" type="GPUParticles3D" parent="." unique_id=19527737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 3, -38)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys7" type="GPUParticles3D" parent="." unique_id=660603615]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 2, 2, -20)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys8" type="GPUParticles3D" parent="." unique_id=1573064218]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 23, 1, -20)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys9" type="GPUParticles3D" parent="." unique_id=2144361861]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 24, 3, 33)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys10" type="GPUParticles3D" parent="." unique_id=383890937]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -15, 3, 34)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys11" type="GPUParticles3D" parent="." unique_id=1703329096]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -38, 2, 34)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys12" type="GPUParticles3D" parent="." unique_id=42492072]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -35, 4, -2)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys13" type="GPUParticles3D" parent="." unique_id=705443549]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -32, 4, -50)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys14" type="GPUParticles3D" parent="." unique_id=1703215021]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -10, 2, -50)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys15" type="GPUParticles3D" parent="." unique_id=656313838]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 40, 2, -50)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys16" type="GPUParticles3D" parent="." unique_id=894133753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 4)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys17" type="GPUParticles3D" parent="." unique_id=450737343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, -10)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys18" type="GPUParticles3D" parent="." unique_id=1843153863]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 11)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
+
+[node name="Butterflys19" type="GPUParticles3D" parent="." unique_id=872803565]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -4, 2, -28)
+amount = 20
+lifetime = 8.0
+preprocess = 3.0
+process_material = SubResource("ParticleProcessMaterial_lx0eo")
+draw_pass_1 = SubResource("PlaneMesh_2blc1")
