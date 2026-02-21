@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b5ejqkejnie46"]
+
+[ext_resource type="PackedScene" uid="uid://bcd2d5ae1g8nd" path="res://assets/glb/rocks/rock5/rock5.glb" id="1_dwq3u"]
+[ext_resource type="Material" uid="uid://ycosnucvhbb5" path="res://resources/materials/rock.tres" id="2_2ocps"]
+
+[node name="Rock5" type="Node3D" unique_id=619722996]
+
+[node name="rock5" parent="." unique_id=1691362266 instance=ExtResource("1_dwq3u")]
+
+[node name="rock_005" parent="rock5" index="0" unique_id=1988658579]
+surface_material_override/0 = ExtResource("2_2ocps")
+
+[editable path="rock5"]

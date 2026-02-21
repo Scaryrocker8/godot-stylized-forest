@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ci6uwcwixa2pb"]
+
+[ext_resource type="PackedScene" uid="uid://v0jwl6ednklb" path="res://assets/glb/rocks/rock6/rock6.glb" id="1_k7s2l"]
+[ext_resource type="Material" uid="uid://ycosnucvhbb5" path="res://resources/materials/rock.tres" id="2_2ons7"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_pp5vc"]
+height = 0.09727287
+radius = 0.12792969
+
+[node name="Rock6" type="Node3D" unique_id=619722996]
+
+[node name="rock6" parent="." unique_id=1461833963 instance=ExtResource("1_k7s2l")]
+
+[node name="rock_006" parent="rock6" index="0" unique_id=509983495]
+surface_material_override/0 = ExtResource("2_2ons7")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=118827386]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision" unique_id=1065764791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.017443389, 0.043387413, 0)
+shape = SubResource("CylinderShape3D_pp5vc")
+
+[editable path="rock6"]

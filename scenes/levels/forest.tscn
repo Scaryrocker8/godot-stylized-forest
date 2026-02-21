@@ -1,0 +1,239 @@
+[gd_scene format=3 uid="uid://87iapvco1ws3"]
+
+[ext_resource type="Script" uid="uid://btuw2r4sp6do1" path="res://scenes/levels/forest.gd" id="1_q5e2f"]
+[ext_resource type="Environment" uid="uid://c83t6g472ycdw" path="res://resources/world_environment/forest_environment_screen.tres" id="2_5trac"]
+[ext_resource type="AudioStream" uid="uid://bld1aw0cygq4j" path="res://assets/wav/Dokuta_Gerovv - amb_forest.wav" id="2_gkbbv"]
+[ext_resource type="AudioStream" uid="uid://cfh3e24e2mwnp" path="res://assets/wav/deleted_user_9900733 -Night forest 3.wav" id="4_0rxfm"]
+[ext_resource type="AudioStream" uid="uid://dbxpyfsr0h40w" path="res://assets/wav/inchadney - wind in the spring forest.wav" id="4_3ysba"]
+[ext_resource type="AudioStream" uid="uid://dfamd3bgdnbf7" path="res://assets/wav/Metris - Reflective Piano Notes.wav" id="4_lx0eo"]
+[ext_resource type="AudioStream" uid="uid://hhn6ift5j643" path="res://assets/wav/WilliamDauricio - dusk_in_the_forest.wav" id="5_ges7r"]
+[ext_resource type="Texture2D" uid="uid://y2lp0i7pchrt" path="res://assets/glb/lavender/lavender_stem_albedo.png" id="6_e5eww"]
+[ext_resource type="Texture2D" uid="uid://ci3xby0bdlsne" path="res://assets/glb/grass/grass_grass_albedo.png" id="7_im81g"]
+[ext_resource type="Texture2D" uid="uid://bffridivrygu5" path="res://assets/glb/lavender/lavender_leaves_albedo.png" id="7_ygu70"]
+[ext_resource type="ArrayMesh" uid="uid://crgy6btka61e8" path="res://resources/meshes/lavender.res" id="8_e5eww"]
+[ext_resource type="ArrayMesh" uid="uid://br4bqttyqmnge" path="res://resources/meshes/grass.res" id="8_ysjpo"]
+[ext_resource type="PackedScene" uid="uid://c88haoy7r36gd" path="res://scenes/objects/tree.tscn" id="9_gexqn"]
+[ext_resource type="PackedScene" uid="uid://b4uef8irm8aa5" path="res://scenes/objects/rocks/rock1.tscn" id="9_kc8j3"]
+[ext_resource type="PackedScene" uid="uid://33kfgo72xogy" path="res://scenes/objects/rocks/rock2.tscn" id="10_e5eww"]
+[ext_resource type="Image" uid="uid://c7qetbc4hmh7l" path="res://resources/terrabrush/Color_0_0.res" id="10_kc8j3"]
+[ext_resource type="Image" uid="uid://c1l0mqbrutnay" path="res://resources/terrabrush/Foliage_0_0_0.res" id="11_e5eww"]
+[ext_resource type="PackedScene" uid="uid://c4lycjplepv8b" path="res://scenes/objects/rocks/rock3.tscn" id="11_ygu70"]
+[ext_resource type="PackedScene" uid="uid://sx1rsmxpptb4" path="res://scenes/objects/rocks/rock4.tscn" id="12_x5gqu"]
+[ext_resource type="Image" uid="uid://cfcjk3x7jmglq" path="res://resources/terrabrush/Foliage_0_0_1.res" id="12_ygu70"]
+[ext_resource type="PackedScene" uid="uid://b5ejqkejnie46" path="res://scenes/objects/rocks/rock5.tscn" id="13_8qayg"]
+[ext_resource type="Image" uid="uid://h23i0o3bmu72" path="res://resources/terrabrush/Heightmap_0_0.res" id="13_x5gqu"]
+[ext_resource type="Image" uid="uid://bcj584luxqo23" path="res://resources/terrabrush/Object_0_0_0.res" id="14_8qayg"]
+[ext_resource type="PackedScene" uid="uid://ci6uwcwixa2pb" path="res://scenes/objects/rocks/rock6.tscn" id="14_gvp5n"]
+[ext_resource type="Image" uid="uid://besbgw1sv26wj" path="res://resources/terrabrush/Snow_0_0.res" id="15_gvp5n"]
+[ext_resource type="PackedScene" uid="uid://cw4gmxgu43o30" path="res://scenes/objects/rocks/rock7.tscn" id="15_oix75"]
+[ext_resource type="PackedScene" uid="uid://dgoq3cumwikup" path="res://scenes/objects/rocks/rock8.tscn" id="16_masl8"]
+[ext_resource type="Image" uid="uid://c2f4u5x1wc3p7" path="res://resources/terrabrush/Water_0_0.res" id="16_oix75"]
+[ext_resource type="PackedScene" uid="uid://dq3maa1euwx4r" path="res://scenes/objects/rocks/rock9.tscn" id="17_2qtp0"]
+[ext_resource type="Image" uid="uid://d1oju85mpxned" path="res://resources/terrabrush/Object_0_0_1.res" id="23_x2df8"]
+[ext_resource type="Shader" uid="uid://bgs1idwbbnokc" path="res://resources/shaders/butterfly.gdshader" id="30_5h0uy"]
+[ext_resource type="PackedScene" uid="uid://jyncanbkjjnq" path="res://addons/jonnies_first_person/player.tscn" id="31_5h0uy"]
+[ext_resource type="Texture2D" uid="uid://c7w8pxo5h6k8u" path="res://assets/png/butterfly.png" id="31_s001h"]
+[ext_resource type="PackedScene" uid="uid://bensm83lh84cr" path="res://scenes/objects/butterflys.tscn" id="32_0rxfm"]
+[ext_resource type="AudioStream" uid="uid://cjm6gi6mm0hr0" path="res://addons/jonnies_first_person/sounds/footsteps/grass/grass_footstep_0.wav" id="32_3ysba"]
+[ext_resource type="AudioStream" uid="uid://dnaego1qoctl5" path="res://addons/jonnies_first_person/sounds/footsteps/grass/grass_footstep_1.wav" id="33_8cxo1"]
+[ext_resource type="AudioStream" uid="uid://bixovo586axcw" path="res://addons/jonnies_first_person/sounds/footsteps/grass/grass_footstep_2.wav" id="34_t626s"]
+[ext_resource type="AudioStream" uid="uid://bpsij3lmmwubb" path="res://addons/jonnies_first_person/sounds/footsteps/grass/grass_footstep_3.wav" id="35_gkbbv"]
+[ext_resource type="AudioStream" uid="uid://cvlvfuolwhyg1" path="res://addons/jonnies_first_person/sounds/footsteps/grass/grass_footstep_4.wav" id="36_0rxfm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5trac"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5trac"]
+material = SubResource("StandardMaterial3D_5trac")
+size = Vector3(0.275, 0.275, 0.275)
+
+[sub_resource type="GDScript" id="GDScript_5trac"]
+script/source = "extends MeshInstance3D
+class_name DeflectorCubeOfJustice
+
+@export_multiline var notice: String = \"This class doesn't actually do anything.
+
+In fact this cube doesn't really do anything either.
+
+The reason it's here is because for whatever god awful reason, when using Godot's world environment glow,
+The center origin of the map starts flashing obnoxiously when the player looks towards it.
+
+Very annoying.
+
+The only way I could fully resolve this issue was to place a cube mesh just large enough to cover it.
+
+I call it the **Deflector Cube of Justice.**
+
+If you decide to remove this cube you will be blinded by a bright light.
+
+You have been warned.\"
+"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_o6xl0"]
+noise_type = 3
+frequency = 0.015
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_tipki"]
+noise = SubResource("FastNoiseLite_o6xl0")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_85g3d"]
+offset = Vector3(-7, 0, 0)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_choun"]
+noise = SubResource("FastNoiseLite_85g3d")
+
+[sub_resource type="FoliageDefinitionResource" id="FoliageDefinitionResource_jyhfs"]
+mesh = ExtResource("8_ysjpo")
+meshScale = Vector3(5, 5, 5)
+windStrength = 0.2
+noiseTexture = SubResource("NoiseTexture2D_tipki")
+albedoTextures = Array[Texture2D]([ExtResource("7_im81g")])
+castShadow = true
+scaleNoiseTexture = SubResource("NoiseTexture2D_choun")
+
+[sub_resource type="FoliageResource" id="FoliageResource_eb6dy"]
+definition = SubResource("FoliageDefinitionResource_jyhfs")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_dp3eg"]
+noise_type = 3
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_0ld40"]
+noise = SubResource("FastNoiseLite_dp3eg")
+
+[sub_resource type="FoliageDefinitionResource" id="FoliageDefinitionResource_muem4"]
+mesh = ExtResource("8_e5eww")
+meshScale = Vector3(1.25, 1.25, 1.25)
+albedoTextures = Array[Texture2D]([ExtResource("6_e5eww"), ExtResource("7_ygu70")])
+castShadow = true
+scaleNoiseTexture = SubResource("NoiseTexture2D_0ld40")
+randomPlacementRange = 4.15
+applyOnTextureIndexes = Array[int]([0, 1])
+
+[sub_resource type="FoliageResource" id="FoliageResource_dp3eg"]
+definition = SubResource("FoliageDefinitionResource_muem4")
+
+[sub_resource type="ObjectDefinitionResource" id="ObjectDefinitionResource_choun"]
+objectFrequency = 4
+randomRange = 4.0
+randomYRotation = true
+randomSize = true
+randomSizeFactorMin = 0.5
+randomSizeFactorMax = 4.0
+objectScenes = Array[PackedScene]([ExtResource("9_gexqn")])
+
+[sub_resource type="ObjectResource" id="ObjectResource_ya4ey"]
+definition = SubResource("ObjectDefinitionResource_choun")
+
+[sub_resource type="ObjectDefinitionResource" id="ObjectDefinitionResource_tts5y"]
+objectFrequency = 5
+randomYRotation = true
+randomSize = true
+randomSizeFactorMax = 3.0
+objectScenes = Array[PackedScene]([ExtResource("9_kc8j3"), ExtResource("10_e5eww"), ExtResource("11_ygu70"), ExtResource("12_x5gqu"), ExtResource("13_8qayg"), ExtResource("14_gvp5n"), ExtResource("15_oix75"), ExtResource("16_masl8"), ExtResource("17_2qtp0")])
+
+[sub_resource type="ObjectResource" id="ObjectResource_yb600"]
+definition = SubResource("ObjectDefinitionResource_tts5y")
+
+[sub_resource type="ZoneResource" id="ZoneResource_85g3d"]
+heightMapImage = ExtResource("13_x5gqu")
+colorImage = ExtResource("10_kc8j3")
+foliagesImage = Array[Image]([ExtResource("11_e5eww"), ExtResource("12_ygu70")])
+objectsImage = Array[Image]([ExtResource("14_8qayg"), ExtResource("23_x2df8")])
+waterImage = ExtResource("16_oix75")
+snowImage = ExtResource("15_gvp5n")
+
+[sub_resource type="ZonesResource" id="ZonesResource_choun"]
+zones = Array[ZoneResource]([SubResource("ZoneResource_85g3d")])
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5h0uy"]
+lifetime_randomness = 0.3
+emission_shape = 3
+emission_box_extents = Vector3(100, 15, 1)
+gravity = Vector3(0, 0, 3)
+scale_min = 0.79999995
+scale_max = 1.3
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s001h"]
+render_priority = 0
+shader = ExtResource("30_5h0uy")
+shader_parameter/tex = ExtResource("31_s001h")
+shader_parameter/color1 = Color(0, 0, 0, 1)
+shader_parameter/color2 = Color(0.13803375, 0.13803375, 0.13803372, 1)
+shader_parameter/displ_amnt = 0.31
+shader_parameter/displ_speed = 20.0
+shader_parameter/pi = 3.1415927
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t1ev5"]
+material = SubResource("ShaderMaterial_s001h")
+size = Vector2(1, 1)
+subdivide_width = 3
+
+[node name="Forest" type="Node3D" unique_id=2105120005 node_paths=PackedStringArray("sun", "music", "ambience_a", "ambience_b")]
+script = ExtResource("1_q5e2f")
+sun = NodePath("Sun")
+music = NodePath("Music")
+ambience_a = NodePath("Ambience/AmbienceA")
+ambience_b = NodePath("Ambience/AmbienceB")
+ambient_sounds = Array[AudioStreamWAV]([ExtResource("2_gkbbv"), ExtResource("4_3ysba"), ExtResource("4_0rxfm"), ExtResource("5_ges7r")])
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2042274331]
+environment = ExtResource("2_5trac")
+
+[node name="DeflectorCubeOfJustice" type="MeshInstance3D" parent="WorldEnvironment" unique_id=840777930]
+mesh = SubResource("BoxMesh_5trac")
+script = SubResource("GDScript_5trac")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1736120272]
+transform = Transform3D(1, 0, 0, 0, -0.81915194, 0.57357633, 0, -0.57357633, -0.81915194, 0, 0, 0)
+light_color = Color(1, 1, 0.6862745, 1)
+light_energy = 1.75
+shadow_enabled = true
+
+[node name="Ambience" type="Node" parent="." unique_id=108000142]
+
+[node name="AmbienceA" type="AudioStreamPlayer" parent="Ambience" unique_id=332993443]
+stream = ExtResource("4_3ysba")
+volume_db = -4.0
+autoplay = true
+bus = &"SFX"
+
+[node name="AmbienceB" type="AudioStreamPlayer" parent="Ambience" unique_id=1416342725]
+volume_db = -4.0
+bus = &"SFX"
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=322420229]
+stream = ExtResource("4_lx0eo")
+bus = &"SFX"
+
+[node name="MusicTimer" type="Timer" parent="Music" unique_id=24826520]
+wait_time = 90.0
+autostart = true
+
+[node name="TerraBrush" type="TerraBrush" parent="." unique_id=1707627618]
+dataPath = "res://resources/terrabrush"
+foliages = Array[FoliageResource]([SubResource("FoliageResource_eb6dy"), SubResource("FoliageResource_dp3eg")])
+objects = Array[ObjectResource]([SubResource("ObjectResource_ya4ey"), SubResource("ObjectResource_yb600")])
+terrainZones = SubResource("ZonesResource_choun")
+metadata/_edit_lock_ = false
+
+[node name="Butterflys" parent="." unique_id=1125983698 instance=ExtResource("32_0rxfm")]
+
+[node name="Birds" type="GPUParticles3D" parent="." unique_id=2146751582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 52, -117)
+extra_cull_margin = 1000.0
+amount = 40
+lifetime = 20.0
+preprocess = 10.0
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_5h0uy")
+draw_pass_1 = SubResource("PlaneMesh_t1ev5")
+
+[node name="Player" parent="." unique_id=857042829 instance=ExtResource("31_5h0uy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 8)
+run_speed = 2.0
+walk_speed = 1.0
+crouch_speed = 0.5
+toggle_crouch = true
+head_bob_frequency = 2.5
+footstep_default_sounds = Array[AudioStream]([ExtResource("32_3ysba"), ExtResource("33_8cxo1"), ExtResource("34_t626s"), ExtResource("35_gkbbv"), ExtResource("36_0rxfm")])
+
+[connection signal="timeout" from="Music/MusicTimer" to="." method="_on_music_timer_timeout"]

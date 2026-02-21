@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bld1aw0cygq4j"
+path="res://.godot/imported/Dokuta_Gerovv - amb_forest.wav-987223773c48217872f715bd77524c5f.sample"
+
+[deps]
+
+source_file="res://assets/wav/Dokuta_Gerovv - amb_forest.wav"
+dest_files=["res://.godot/imported/Dokuta_Gerovv - amb_forest.wav-987223773c48217872f715bd77524c5f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

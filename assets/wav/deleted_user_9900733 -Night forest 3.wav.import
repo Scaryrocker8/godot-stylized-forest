@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cfh3e24e2mwnp"
+path="res://.godot/imported/deleted_user_9900733 -Night forest 3.wav-759a8debaf7243df7d267ab27984bdba.sample"
+
+[deps]
+
+source_file="res://assets/wav/deleted_user_9900733 -Night forest 3.wav"
+dest_files=["res://.godot/imported/deleted_user_9900733 -Night forest 3.wav-759a8debaf7243df7d267ab27984bdba.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
