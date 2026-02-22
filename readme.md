@@ -1,4 +1,4 @@
-![preview](preview.png)
+![preview](background.png)
 
 # Godot Stylized Forest
 
@@ -14,10 +14,10 @@ Free to download and explore. Have fun!
 
 # Screenshots
 
-![screenshot](extras/screenshot0.png)
-![screenshot](extras/screenshot1.png)
-![screenshot](extras/screenshot2.png)
-![screenshot](extras/screenshot3.png)
-![screenshot](extras/screenshot4.png)
+![screenshot](screenshots/screenshot0.png)
+![screenshot](screenshots/screenshot1.png)
+![screenshot](screenshots/screenshot2.png)
+![screenshot](screenshots/screenshot3.png)
+![screenshot](screenshots/screenshot4.png)
 
 Created by Jonnie Gieringer

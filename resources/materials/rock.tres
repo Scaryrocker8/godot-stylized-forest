@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://ycosnucvhbb5"]
 
 [ext_resource type="Shader" uid="uid://dks2omfg6nqr" path="res://resources/shaders/unshaded.gdshader" id="1_38w4b"]
-[ext_resource type="Texture2D" uid="uid://b17vqnrn0sy7u" path="res://assets/png/rock.jpg" id="2_38w4b"]
+[ext_resource type="Texture2D" uid="uid://b17vqnrn0sy7u" path="res://assets/jpg/rock.jpg" id="2_38w4b"]
 
 [resource]
 render_priority = 0
